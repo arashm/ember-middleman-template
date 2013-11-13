@@ -14,7 +14,15 @@ Simple & straitforward
 
 How-To
 ======
+First install dependencies:
+
+```bash
+bundle install
+```
+
 To run the server type:
 
-`bundle exec middleman server`
+```bash
+bundle exec middleman server
+```
 
