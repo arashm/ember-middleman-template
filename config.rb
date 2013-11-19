@@ -46,18 +46,23 @@
 # end
 
 activate :livereload
-config[:file_watcher_ignore] += [ /.idea\// ]
 
 activate :ember
 
 set :css_dir, 'stylesheets'
 
-set :js_dir, 'javascripts'
+set :js_dir, 'app'
 
 set :images_dir, 'images'
 
+set :layout, false
+
+sprockets.append_path File.join "#{root}", 'vendor/javascript'
+sprockets.append_path File.join "#{root}", 'vendor/css'
+
 # Build-specific configuration
 configure :build do
+
   # For example, change the Compass output style for deployment
   activate :minify_css
 
@@ -68,7 +73,7 @@ configure :build do
   activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
