@@ -2,10 +2,10 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
-gem "middleman", "~>3.2.0"
+gem "middleman", "~>3.3.0"
 
 # Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman-livereload"
 
 gem 'jquery-source'
 gem 'coffee-script'
@@ -14,8 +14,8 @@ gem "middleman-imageoptim"
 
 gem 'ember-middleman'
 gem 'handlebars-source'
-gem 'ember-source', '~> 1.1.2'
-gem 'ember-data-source', '~> 1.0.0.beta.3'
+gem 'ember-source'
+gem 'ember-data-source', '1.0.0.beta.7'
 
 # For faster file watcher updates on Windows:
 # gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
